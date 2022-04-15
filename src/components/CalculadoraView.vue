@@ -1,8 +1,8 @@
 <template>
-  <div class="hero is-fullheight $warning">
+  <div class="">
       <div class="sobe">
-        <h1>{{ getOperation }}</h1>
-        <h2 >{{ getResult }}</h2>
+        <h2>{{ getOperation }}</h2>
+        <h1sud >{{ getResult }}</h1sud>
       </div>
     <div class="hero-body ">
       <div class="columns is-3">
