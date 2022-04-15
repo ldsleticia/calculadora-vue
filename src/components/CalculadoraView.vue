@@ -21,7 +21,7 @@
         <button @click="handleClick('6')" class="button is-primary column">6</button>
         <button @click="handleClick('-')" class="button is-primary column">-</button>
 
-        <button @click="handleClick('3' )" class="button is-primary column">3</button>
+        <button @click="handleClick('3')" class="button is-primary column">3</button>
         <button @click="handleClick('2')" class="button is-primary column">2</button>
         <button @click="handleClick('1')" class="button is-primary column">1</button>
         <button @click="handleClick('-')" class="button is-primary column">+</button>
