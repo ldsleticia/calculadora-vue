@@ -1,34 +1,34 @@
 <template>
-  <div class="aprender-bg">
-    <div class="aprender-bg-2">
-      <div class="aprender-bg-3">
-        <p class="texto-cinza-700">{{ getOperation }}</p>
-        <p class="texto-cinza-900">{{ getResult }}</p>
+  <div>
+    <div>
+      <div>
+        <p>{{ getOperation }}</p>
+        <p >{{ getResult }}</p>
       </div>
 
-      <div class="botoes">
-        <button class="ac" @click="handleClickAC()">AC</button>
-        <button @click="handleClickDel()">DEL</button>
-        <button @click="handleClick('/')">/</button>
+      <div class="columns is-3">
+        <button @click="handleClickAC()" class="button is-primary column is-3" >AC</button>
+        <button @click="handleClickDel()" class="button is-primary column is-2">DEL</button>
+        <button @click="handleClick('÷')" class="button is-primary column is-1">÷</button>
 
-        <button @click="handleClick('7')">7</button>
-        <button @click="handleClick('8')">8</button>
-        <button @click="handleClick('9')">9</button>
-        <button @click="handleClick('x')">X</button>
+        <button @click="handleClick('7')" class="button is-primary column">7</button>
+        <button @click="handleClick('8')" class="button is-primary column">8</button>
+        <button @click="handleClick('9')" class="button is-primary column">9</button>
+        <button @click="handleClick('x')" class="button is-primary column">X</button>
 
-        <button @click="handleClick('4')">4</button>
-        <button @click="handleClick('5')">5</button>
-        <button @click="handleClick('6')">6</button>
-        <button @click="handleClick('-')">-</button>
+        <button @click="handleClick('4')" class="button is-primary column">4</button>
+        <button @click="handleClick('5')" class="button is-primary column">5</button>
+        <button @click="handleClick('6')" class="button is-primary column">6</button>
+        <button @click="handleClick('-')" class="button is-primary column">-</button>
 
-        <button @click="handleClick('3')">3</button>
-        <button @click="handleClick('2')">2</button>
-        <button @click="handleClick('1')">1</button>
-        <button @click="handleClick('-')">+</button>
+        <button @click="handleClick('3')" class="button is-primary column">3</button>
+        <button @click="handleClick('2')" class="button is-primary column">2</button>
+        <button @click="handleClick('1')" class="button is-primary column">1</button>
+        <button @click="handleClick('-')" class="button is-primary column">+</button>
 
-        <button @click="handleClick('0')">0</button>
-        <button @click="handleClick('.')">.</button>
-        <button @click="handleClickResult()">=</button>
+        <button @click="handleClick('0')" class="button is-primary column">0</button>
+        <button @click="handleClick('.')" class="button is-primary column">.</button>
+        <button @click="handleClickResult()" class="button is-primary column">=</button>
       </div>
     </div>
   </div>
@@ -64,6 +64,7 @@ export default {
         let operation = this.getResult
         this.getOperation = operation
         operation = operation.replace('x', '*')
+        operation = operation.replace('÷', '/')
         this.getResult = eval(operation)
     }
   },
