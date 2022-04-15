@@ -6,28 +6,28 @@
       </div>
     <div class="hero-body ">
       <div class="columns is-3">
-        <button @click="handleClickAC()" class="button is-primary column is-3" >AC</button>
-        <button @click="handleClickDel()" class="button is-primary column is-2">DEL</button>
-        <button @click="handleClick('÷')" class="button is-primary column is-1">÷</button>
+        <button @click="handleClickAC()" class="" >AC</button>
+        <button @click="handleClickDel()" class="">DEL</button>
+        <button @click="handleClick('÷')" class="">÷</button>
 
-        <button @click="handleClick('7')" class="button is-primary column">7</button>
-        <button @click="handleClick('8')" class="button is-primary column">8</button>
-        <button @click="handleClick('9')" class="button is-primary column">9</button>
-        <button @click="handleClick('x')" class="button is-primary column">X</button>
+        <button @click="handleClick('7')" class="">7</button>
+        <button @click="handleClick('8')" class="">8</button>
+        <button @click="handleClick('9')" class="">9</button>
+        <button @click="handleClick('x')" class="">X</button>
 
-        <button @click="handleClick('4')" class="button is-primary column">4</button>
-        <button @click="handleClick('5')" class="button is-primary column">5</button>
-        <button @click="handleClick('6')" class="button is-primary column">6</button>
-        <button @click="handleClick('-')" class="button is-primary column">-</button>
+        <button @click="handleClick('4')" class="">4</button>
+        <button @click="handleClick('5')" class="">5</button>
+        <button @click="handleClick('6')" class="">6</button>
+        <button @click="handleClick('-')" class="">-</button>
 
-        <button @click="handleClick('3')" class="button is-primary column">3</button>
-        <button @click="handleClick('2')" class="button is-primary column">2</button>
-        <button @click="handleClick('1')" class="button is-primary column">1</button>
-        <button @click="handleClick('-')" class="button is-primary column">+</button>
+        <button @click="handleClick('3')" class="">3</button>
+        <button @click="handleClick('2')" class="">2</button>
+        <button @click="handleClick('1')" class="">1</button>
+        <button @click="handleClick('-')" class="">+</button>
 
-        <button @click="handleClick('0')" class="button is-primary column">0</button>
-        <button @click="handleClick('.')" class="button is-primary column">.</button>
-        <button @click="handleClickResult()" class="button is-primary column">=</button>
+        <button @click="handleClick('0')" class="">0</button>
+        <button @click="handleClick('.')" class="">.</button>
+        <button @click="handleClickResult()" class="">=</button>
       </div>
     </div>
   </div>
@@ -69,10 +69,3 @@ export default {
   },
 };
 </script>
-
-<style lang="scss">
-div.sobe {
-    margin-top: 100px;
-    text-align: center;
-}
-</style>
