@@ -2,7 +2,7 @@
   <div class="">
       <div class="sobe">
         <h2>{{ getOperation }}</h2>
-        <h1sud >{{ getResult }}</h1sud>
+        <h1 >{{ getResult }}</h1>
       </div>
     <div class="hero-body ">
       <div class="columns is-3">
