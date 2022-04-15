@@ -1,11 +1,10 @@
 <template>
-  <div>
-    <div>
-      <div>
-        <p>{{ getOperation }}</p>
-        <p >{{ getResult }}</p>
+  <div class="hero is-fullheight $warning">
+      <div class="sobe">
+        <h1>{{ getOperation }}</h1>
+        <h2 >{{ getResult }}</h2>
       </div>
-
+    <div class="hero-body ">
       <div class="columns is-3">
         <button @click="handleClickAC()" class="button is-primary column is-3" >AC</button>
         <button @click="handleClickDel()" class="button is-primary column is-2">DEL</button>
@@ -70,3 +69,10 @@ export default {
   },
 };
 </script>
+
+<style lang="scss">
+div.sobe {
+    margin-top: 100px;
+    text-align: center;
+}
+</style>
