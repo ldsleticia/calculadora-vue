@@ -1,33 +1,49 @@
 <template>
-  <div class="">
-      <div class="sobe">
-        <h2>{{ getOperation }}</h2>
-        <h1 >{{ getResult }}</h1>
+  <div class="h-screen bg-green-400 flex justify-center py-16">
+    <div class="w-1/3">
+      <div class="p-4 text-right shadow-2x1 rounded-t-lg bg-white">
+        <p class="font-semibold text-gray-700 h-6"> {{ getOperation }} </p>
+        <p class="font-bold text-3xl text-gray-900 my-2"> {{ getResult }} </p>
       </div>
-    <div class="hero-body ">
-      <div class="columns is-3">
-        <button @click="handleClickAC()" class="" >AC</button>
-        <button @click="handleClickDel()" class="">DEL</button>
-        <button @click="handleClick('÷')" class="">÷</button>
 
-        <button @click="handleClick('7')" class="">7</button>
-        <button @click="handleClick('8')" class="">8</button>
-        <button @click="handleClick('9')" class="">9</button>
-        <button @click="handleClick('x')" class="">X</button>
+      <div class="grid grid-cols-4 grid-rows-5 shadow-2x1 rounded-b-lg">
 
-        <button @click="handleClick('4')" class="">4</button>
-        <button @click="handleClick('5')" class="">5</button>
-        <button @click="handleClick('6')" class="">6</button>
-        <button @click="handleClick('-')" class="">-</button>
+        <button class="h-16 text-xl text-white font-semibold bg-green-500 border-green-400 col-span-2 hover:bg-green-600" @click="handleClickAC()">AC</button>
 
-        <button @click="handleClick('3')" class="">3</button>
-        <button @click="handleClick('2')" class="">2</button>
-        <button @click="handleClick('1')" class="">1</button>
-        <button @click="handleClick('-')" class="">+</button>
+        <button class="h-16 text-xl text-white font-semibold bg-green-500 border-green-400 hover:bg-green-600" @click="handleClickDel()">DEL</button>
 
-        <button @click="handleClick('0')" class="">0</button>
-        <button @click="handleClick('.')" class="">.</button>
-        <button @click="handleClickResult()" class="">=</button>
+        <button class="h-16 text-xl text-white font-semibold bg-gray-700 border-gray-600 hover:bg-gray-800" @click="handleClick('÷')">÷</button>
+
+        <button class="h-16 text-xl text-white font-semibold bg-green-500 border-green-400 hover:bg-green-600" @click="handleClick('7')">7</button>
+        
+        <button class="h-16 text-xl text-white font-semibold bg-green-500 border-green-400 hover:bg-green-600" @click="handleClick('8')">8</button>
+
+        <button class="h-16 text-xl text-white font-semibold bg-green-500 border-green-400 hover:bg-green-600" @click="handleClick('9')">9</button>
+
+        <button class="h-16 text-xl text-white font-semibold bg-gray-700 border-gray-600 hover:bg-gray-800" @click="handleClick('x')">X</button>
+
+        <button  class="h-16 text-xl text-white font-semibold bg-green-500 border-green-400 hover:bg-green-600" @click="handleClick('4')">4</button>
+
+        <button  class="h-16 text-xl text-white font-semibold bg-green-500 border-green-400 hover:bg-green-600" @click="handleClick('5')">5</button>
+
+        <button  class="h-16 text-xl text-white font-semibold bg-green-500 border-green-400 hover:bg-green-600" @click="handleClick('6')">6</button>
+
+        <button  class="h-16 text-xl text-white font-semibold bg-gray-700 border-gray-600 hover:bg-gray-800" @click="handleClick('-')">-</button>
+
+        <button  class="h-16 text-xl text-white font-semibold bg-green-500 border-green-400 hover:bg-green-600" @click="handleClick('3')">3</button>
+
+        <button  class="h-16 text-xl text-white font-semibold bg-green-500 border-green-400 hover:bg-green-600" @click="handleClick('2')">2</button>
+
+        <button  class="h-16 text-xl text-white font-semibold bg-green-500 border-green-400 hover:bg-green-600" @click="handleClick('1')">1</button>
+
+        <button  class="h-16 text-xl text-white font-semibold bg-gray-700 border-gray-600 hover:bg-gray-800" @click="handleClick('+')">+</button>
+
+        <button  class="h-16 text-xl text-white font-semibold bg-green-500 border-green-400 col-span-2 hover:bg-green-600" @click="handleClick('0')">0</button>
+
+        <button  class="h-16 text-xl text-white font-semibold bg-green-500 border-green-400 hover:bg-green-600" @click="handleClick('.')">.</button>
+
+        <button  class="h-16 text-xl text-white font-semibold bg-gray-700 border-gray-600 hover:bg-gray-800" @click="handleClickResult()">=</button>
+
       </div>
     </div>
   </div>
@@ -41,7 +57,7 @@ export default {
       getResult: "0",
     };
   },
-  methods: {
+  computed: {
     handleClickAC() {
       this.getResult = "0";
     },
@@ -69,3 +85,10 @@ export default {
   },
 };
 </script>
+
+<style scoped>
+
+button {
+  border: 1px solid;
+}
+</style>
