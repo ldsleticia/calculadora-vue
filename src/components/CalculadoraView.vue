@@ -57,7 +57,7 @@ export default {
       getResult: "0",
     };
   },
-  computed: {
+  methods: {
     handleClickAC() {
       this.getResult = "0";
     },
